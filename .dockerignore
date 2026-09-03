@@ -1,0 +1,9 @@
+**/bin
+**/obj
+.git
+.vs
+TestResults
+*.db
+node_modules
+**/dist
+**/.vitepress/.temp

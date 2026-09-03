@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <ItemGroup>
+        <ProjectReference Include="../../Packages/Aditify/Identity.AspNetCore/Aditify.Identity.AspNetCore.csproj" />
+        <InternalsVisibleTo Include="PackageGateway.IntegrationTests" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="../PackageGateway.Domain/PackageGateway.Domain.csproj" />
+        <ProjectReference Include="../PackageGateway.Application/PackageGateway.Application.csproj" />
+        <ProjectReference Include="../PackageGateway.Infrastructure/PackageGateway.Infrastructure.csproj" />
+        <ProjectReference Include="../PackageGateway.Storage/PackageGateway.Storage.csproj" />
+        <ProjectReference Include="../PackageGateway.Storage.Sqlite/PackageGateway.Storage.Sqlite.csproj" />
+        <ProjectReference Include="../PackageGateway.Storage.SqlServer/PackageGateway.Storage.SqlServer.csproj" />
+        <ProjectReference Include="../PackageGateway.Security/PackageGateway.Security.csproj" />
+        <ProjectReference Include="../PackageGateway.Protocols.NuGet/PackageGateway.Protocols.NuGet.csproj" />
+        <ProjectReference Include="../PackageGateway.Protocols.Npm/PackageGateway.Protocols.Npm.csproj" />
+        <PackageReference Include="HotChocolate.AspNetCore" />
+        <PackageReference Include="HotChocolate.AspNetCore.Authorization" />
+        <PackageReference Include="HotChocolate.CostAnalysis" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+        <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" />
+        <PackageReference Include="OpenTelemetry.Extensions.Hosting" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.Http" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" />
+    </ItemGroup>
+</Project>

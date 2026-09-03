@@ -1,0 +1,41 @@
+{
+  "name": "package-gateway-admin",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "yarn type-check && vite build",
+    "type-check": "vue-tsc --build",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@aditify/identity": "link:../../Packages/Aditify/Identity",
+    "@aditify/ui": "link:../../Packages/Aditify/Ui",
+    "@azure/msal-browser": "^5.19.0",
+    "@fontsource-variable/inter": "^5.2.8",
+    "@lucide/vue": "^1.35.0",
+    "vue": "^3.5.41",
+    "vue-i18n": "^11.4.8",
+    "vue-router": "^5.2.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^8.3.0",
+    "@intlify/unplugin-vue-i18n": "^11.2.5",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/test-utils": "^2.4.6",
+    "@vue/tsconfig": "^0.8.1",
+    "eslint": "^10.9.0",
+    "eslint-plugin-format": "^2.0.1",
+    "jsdom": "^26.1.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11",
+    "vue-tsc": "^3.3.11"
+  }
+}

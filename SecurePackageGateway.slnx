@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PackageGateway.Domain/PackageGateway.Domain.csproj" />
+    <Project Path="src/PackageGateway.Application/PackageGateway.Application.csproj" />
+    <Project Path="src/PackageGateway.Infrastructure/PackageGateway.Infrastructure.csproj" />
+    <Project Path="src/PackageGateway.Storage/PackageGateway.Storage.csproj" />
+    <Project Path="src/PackageGateway.Storage.Sqlite/PackageGateway.Storage.Sqlite.csproj" />
+    <Project Path="src/PackageGateway.Storage.SqlServer/PackageGateway.Storage.SqlServer.csproj" />
+    <Project Path="src/PackageGateway.Security/PackageGateway.Security.csproj" />
+    <Project Path="src/PackageGateway.Protocols.NuGet/PackageGateway.Protocols.NuGet.csproj" />
+    <Project Path="src/PackageGateway.Protocols.Npm/PackageGateway.Protocols.Npm.csproj" />
+    <Project Path="src/PackageGateway.Api/PackageGateway.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PackageGateway.ProtocolTests.Common/PackageGateway.ProtocolTests.Common.csproj" />
+    <Project Path="tests/PackageGateway.UnitTests/PackageGateway.UnitTests.csproj" />
+    <Project Path="tests/PackageGateway.IntegrationTests/PackageGateway.IntegrationTests.csproj" />
+    <Project Path="tests/PackageGateway.NuGet.Tests/PackageGateway.NuGet.Tests.csproj" />
+    <Project Path="tests/PackageGateway.Npm.Tests/PackageGateway.Npm.Tests.csproj" />
+  </Folder>
+</Solution>

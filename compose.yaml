@@ -1,0 +1,25 @@
+services:
+  gateway:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      Database__Provider: Sqlite
+      Database__ConnectionString: Data Source=/data/packagegateway.db
+      BlobStorage__Path: /data/blobs
+      Gateway__TokenPepper: ${PACKAGE_GATEWAY_TOKEN_PEPPER:?Set PACKAGE_GATEWAY_TOKEN_PEPPER to at least 32 random characters}
+      Authentication__Mode: Local
+      Authentication__DataProtectionKeysPath: /data/dataprotection-keys
+    volumes:
+      - gateway-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp/packagegateway:size=1073741824,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: unless-stopped
+
+volumes:
+  gateway-data:

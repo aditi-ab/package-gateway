@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="../../src/PackageGateway.Protocols.NuGet/PackageGateway.Protocols.NuGet.csproj" />
+    <ProjectReference Include="../../src/PackageGateway.Protocols.Npm/PackageGateway.Protocols.Npm.csproj" />
+    <ProjectReference Include="../../src/PackageGateway.Infrastructure/PackageGateway.Infrastructure.csproj" />
+    <ProjectReference Include="../../src/PackageGateway.Storage/PackageGateway.Storage.csproj" />
+    <ProjectReference Include="../../src/PackageGateway.Security/PackageGateway.Security.csproj" />
+  </ItemGroup>
+</Project>
